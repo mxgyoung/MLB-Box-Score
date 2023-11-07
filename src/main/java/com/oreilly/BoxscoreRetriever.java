@@ -19,6 +19,8 @@ public class BoxscoreRetriever implements Function<List<String>, List<Result>> {
     private Gson gson = new Gson();
 
     @SuppressWarnings("ConstantConditions")
+
+    System.out.println("Welcome to the Box Score Retriever");
     public Optional<Result> gamePattern2Result(String pattern) {
         String[] parts = pattern.split("_");
         String dateUrl = String.format("year_%s/month_%s/day_%s/",
